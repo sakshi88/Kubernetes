@@ -48,3 +48,13 @@ source .devops/bin/activate
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+
+### Files Summary
+* output_txt_files folder contains output produced by running app in docker and then after deploying app via kubernetes
+* run_docker.sh is file to build image and run it locally
+* upload_docker.sh file uploads image created above to remote docker repo
+* run_kubernetes.sh file runs image in containerised env
+* requirements.txt specifies all external dependencies required
+* Makefile includes instructions on environment setup and lint tests
+* make_prediction.sh is ued to train our model
